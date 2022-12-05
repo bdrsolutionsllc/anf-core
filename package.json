@@ -1,0 +1,51 @@
+{
+    "name": "anf",
+    "version": "0.1.0",
+    "description": "Analysis Normal Form (ANF) for JavaScript and TypeScipt projects.",
+    "main": "index.js",
+    "bin": {
+        "sbom-report": "build/bin/anf.js"
+    },
+    "scripts": {
+        "build": "npm run clean && npm run compile && npm run copy-files",
+        "compile": "npx tsc && chmod +x ./build/bin/*",
+        "copy-files": "cp -R src/schema build/schema",
+        "clean": "rm -rf ./build",
+        "package": "npm run build && npm pack",
+        "test": "jest",
+        "test-watch": "nodemon --watch '{src,test}/**' --ext 'ts,md,json' --exec 'npx jest'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/preston/anf.git"
+    },
+    "keywords": [
+        "analysis",
+        "normal",
+        "form",
+        "anf",
+        "postgres",
+        "postgresql",
+        "relational",
+        "database",
+        "schema",
+        "parquet"
+    ],
+    "author": "Preston Lee",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/preston/anf/issues"
+    },
+    "homepage": "https://github.com/preston/anf#readme",
+    "dependencies": {
+        "commander": "^9.4.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.2.4",
+        "@types/node": "^18.11.10",
+        "nodemon": "^2.0.20",
+        "ts-jest": "^29.0.3",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.3"
+    }
+}

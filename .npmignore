@@ -1,0 +1,7 @@
+src
+test
+.git
+.gitignore
+.npmignore
+tsconfig.json
+.editorconfig
