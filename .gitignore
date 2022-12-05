@@ -10,3 +10,6 @@ npm-debug.log*
 # Temporary files
 doc/sbom.*
 test.md
+
+# Build
+*.tgz
