@@ -1,6 +1,6 @@
 {
     "name": "anf",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Analysis Normal Form (ANF) for JavaScript and TypeScipt projects.",
     "main": "index.js",
     "bin": {
@@ -42,7 +42,7 @@
     },
     "devDependencies": {
         "@types/jest": "^29.2.4",
-        "@types/node": "^18.11.10",
+        "@types/node": "^18.11.11",
         "nodemon": "^2.0.20",
         "ts-jest": "^29.0.3",
         "ts-node": "^10.9.1",
