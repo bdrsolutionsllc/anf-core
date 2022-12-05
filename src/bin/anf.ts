@@ -21,13 +21,15 @@ program.command('version')
 
 program.command('schema')
     .description("Prints the path to the bundled physical reference implementation schema for import into the corresponding database system.")
-    // .argument('<options.json>', 'A newline-delimited key=value file of optional parameters.')
-    .argument("<postgres>", "SQL implementation dialect to emit.")
+    .argument("<postgres|parquet>", "SQL implementation dialect to emit.")
     .action((dialect, options) => {
         switch (dialect) {
             case 'postgres':
                 console.log(SchemaDirectory.POSTGRES);
                 // const raw = fs.readFileSync(path.normalize(SchemaDirectory.POSTGRES)).toString();
+                break;
+            case 'parquet':
+                console.log('Not yet implemented.');
                 break;
             default:
                 program.error("Unsupported dialect '" + dialect + "'.");

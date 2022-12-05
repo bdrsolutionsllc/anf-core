@@ -1,16 +1,16 @@
 {
     "name": "anf",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Analysis Normal Form (ANF) for JavaScript and TypeScipt projects.",
     "main": "index.js",
     "bin": {
-        "sbom-report": "build/bin/anf.js"
+        "anf": "build/bin/anf.js"
     },
     "scripts": {
-        "build": "npm run clean && npm run compile && npm run copy-files",
-        "compile": "npx tsc && chmod +x ./build/bin/*",
-        "copy-files": "cp -R src/schema build/schema",
         "clean": "rm -rf ./build",
+        "compile": "npx tsc && chmod +x ./build/bin/*",
+        "copy-files": "mkdir -p build/schema && cp -R src/schema/*.sql build/schema/",
+        "build": "npm run clean && npm run compile && npm run copy-files",
         "package": "npm run build && npm pack",
         "test": "jest",
         "test-watch": "nodemon --watch '{src,test}/**' --ext 'ts,md,json' --exec 'npx jest'"

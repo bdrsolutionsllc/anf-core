@@ -7,6 +7,7 @@ These resources are for research and evaluation by ANF stakeholders. As HL7 does
 If you ONLY want the static schemas, you may download them directly:
 
 * **[ANF for PostgreSQL](./src/schema/anf-postgres-sti.sql)** : Uses UUIDv4 ids and native STI (single table inheritance).
+* **[Parquet]** : TODO
 
 
 ## Usage
@@ -14,6 +15,7 @@ If you ONLY want the static schemas, you may download them directly:
 `npm i -g anf` to install using your existing NodeJS environment.
 
 `anf schema postgres` to emit a schema for PostgreSQL.
+`anf schema parquet` to emit empty Parquet files.
 
 ## Development
 
