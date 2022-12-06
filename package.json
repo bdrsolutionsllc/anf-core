@@ -44,6 +44,7 @@
     "devDependencies": {
         "@types/jest": "^29.2.4",
         "@types/node": "^18.11.11",
+        "@types/thrift": "^0.10.11",
         "nodemon": "^2.0.20",
         "ts-jest": "^29.0.3",
         "ts-node": "^10.9.1",
