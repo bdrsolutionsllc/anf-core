@@ -1,7 +1,7 @@
 {
-    "name": "anf",
+    "name": "anf-core",
     "version": "0.1.2",
-    "description": "Analysis Normal Form (ANF) for JavaScript and TypeScipt projects.",
+    "description": "Analysis Normal Form (ANF) core resources and utilities.",
     "main": "index.js",
     "bin": {
         "anf": "build/bin/anf.js"
