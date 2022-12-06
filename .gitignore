@@ -8,6 +8,7 @@ logs
 npm-debug.log*
 
 # Temporary files
+tmp/
 doc/sbom.*
 test.md
 

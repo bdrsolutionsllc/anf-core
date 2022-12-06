@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs';
 import { exec, ExecException } from 'child_process';
 import { ANFVersion } from '../src/version';
-import { SchemaDirectory } from '../src/schema/directory';
+import { ANFSchemaDirectory } from '../src/schema/directory';
 
 describe('`version` subcommand', () => {
 
@@ -28,7 +28,7 @@ describe('`schema` subcommand', () => {
         expect(out.stderr.length).toBe(0);
         expect(out.code).toBe(0);
 
-        let correct = fs.readFileSync(SchemaDirectory.POSTGRES).toString();
+        let correct = fs.readFileSync(ANFSchemaDirectory.POSTGRES).toString();
         // console.log(correct);
         expect(fs.readFileSync(out.stdout.trim()).toString()).toBe(correct);
     });

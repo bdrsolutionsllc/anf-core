@@ -2,7 +2,7 @@
 
 import path from "path";
 
-export class SchemaDirectory {
+export class ANFSchemaDirectory {
 
     public static POSTGRES = path.normalize(path.join(__dirname, 'anf-postgres-sti.sql'));
 

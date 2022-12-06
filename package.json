@@ -38,7 +38,8 @@
     },
     "homepage": "https://github.com/preston/anf#readme",
     "dependencies": {
-        "commander": "^9.4.1"
+        "commander": "^9.4.1",
+        "parquets": "^0.10.10"
     },
     "devDependencies": {
         "@types/jest": "^29.2.4",
