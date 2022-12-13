@@ -33,14 +33,18 @@ schema_command.command("parquet")
         let schema = new ANFPaquetSchema(directory);
         schema.generate().then(() => {
             console.log('Done.');
-         });
+        });
     });
 
 
 program.command('version')
     .description('Package version information.')
     .action(options => {
-        console.log(ANFVersion.VERSION);
+        const json = {
+            package_version: ANFVersion.PACKAGE_VERSION,
+            specification_version: ANFVersion.SPECIFICATION_VERSION
+        }
+        console.log(JSON.stringify(json, null, "\t"));
     });
 
 

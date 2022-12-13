@@ -8,7 +8,8 @@ describe('`version` subcommand', () => {
 
     test('should report correct package version', async () => {
         let result = (await cli(['version'], __dirname)).stdout.trim();
-        expect(result).toBe(ANFVersion.VERSION);
+        let json = JSON.parse(result);
+        expect(json.package_version).toBe(ANFVersion.PACKAGE_VERSION);
     });
 
 });
