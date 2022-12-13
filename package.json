@@ -1,5 +1,5 @@
 {
-    "name": "@anf/core",
+    "name": "anf-core",
     "version": "0.2.0",
     "description": "Analysis Normal Form (ANF) core resources and utilities.",
     "main": "index.js",
