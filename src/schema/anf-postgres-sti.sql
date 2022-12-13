@@ -12,7 +12,7 @@
  Target Server Version : 140006 (140006)
  File Encoding         : 65001
 
- Date: 05/12/2022 14:51:50
+ Date: 13/12/2022 12:23:20
 */
 
 
@@ -117,6 +117,8 @@ CREATE TABLE "performance_circumstance_participants" (
 )
 ;
 COMMENT ON COLUMN "performance_circumstance_participants"."id" IS 'Primary key of UUIDv4 type.';
+COMMENT ON COLUMN "performance_circumstance_participants"."performance_circumstance_id" IS 'Foreign key to related performance_circumstance.';
+COMMENT ON COLUMN "performance_circumstance_participants"."participant_id" IS 'Foreign key to related participant.';
 COMMENT ON TABLE "performance_circumstance_participants" IS 'Many-to-many table associating performance_circumstances to participants.';
 
 -- ----------------------------
@@ -150,10 +152,12 @@ COMMENT ON TABLE "performance_circumstances" IS 'This class describes the circum
 -- ----------------------------
 DROP TABLE IF EXISTS "practitioners" CASCADE;
 CREATE TABLE "practitioners" (
-  "id" uuid NOT NULL DEFAULT uuid_generate_v4()
+  "id" uuid NOT NULL DEFAULT uuid_generate_v4(),
+  "name" varchar(255) COLLATE "pg_catalog"."default" NOT NULL
 )
 ;
 COMMENT ON COLUMN "practitioners"."id" IS 'Primary key of UUIDv4 type.';
+COMMENT ON COLUMN "practitioners"."name" IS 'ANF does not define what can/should be in this table. This is just a placeholder, as it most likely needs to be an external identifier to a different database.';
 
 -- ----------------------------
 -- Table structure for repetitions
@@ -237,6 +241,8 @@ CREATE TABLE "statement_authors" (
 )
 ;
 COMMENT ON COLUMN "statement_authors"."id" IS 'Primary key of UUIDv4 type.';
+COMMENT ON COLUMN "statement_authors"."statement_id" IS 'Foreign key to related statement.';
+COMMENT ON COLUMN "statement_authors"."practitioner_id" IS 'Foreign key to related practitioner.';
 
 -- ----------------------------
 -- Table structure for statement_circumstance_purposes
@@ -249,6 +255,8 @@ CREATE TABLE "statement_circumstance_purposes" (
 )
 ;
 COMMENT ON COLUMN "statement_circumstance_purposes"."id" IS 'Primary key of UUIDv4 type.';
+COMMENT ON COLUMN "statement_circumstance_purposes"."statement_id" IS 'Foreign key to related statement.';
+COMMENT ON COLUMN "statement_circumstance_purposes"."logical_expression_id" IS 'Foreign key to related logical_expression.';
 COMMENT ON TABLE "statement_circumstance_purposes" IS 'Many-to-many table associating statements with logical_expressions capturing the circumstances.';
 
 -- ----------------------------
