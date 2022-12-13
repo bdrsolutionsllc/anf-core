@@ -2,7 +2,7 @@
 
 This NPM package provides resources for capturing clinical healthcare data represented via [Analysis Normal Form release v1](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=523) using mainstream technologies, as the [ANF specification](https://github.com/HL7/ANF) itself is _only_ a logical model and accompanying editorial principles not offer technological guidance.
 
-These resources are for collaborative research and evaluation by ANF stakeholders. Since HL7 does not ballot software implementations, this repository is maintained separately from the balloted specification(s).
+These resources are for collaborative research and evaluation by ANF stakeholders. Since HL7 does not ballot software implementations, this repository is maintained separately from the balloted specification(s). Pre-built copies can be downloaded from via [NPMjs](https://www.npmjs.com/package/anf-core).
 
 If you ONLY want the static schemas, you may download them directly:
 
