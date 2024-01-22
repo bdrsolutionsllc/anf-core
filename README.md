@@ -29,4 +29,4 @@ npm test-watch # to rerun test cases upon changes
 Released under the Apache 2.0 license. See [LICENSE](LICENSE) file.
 
 ## Attribution
-Preston Lee (@preston)
+Preston Lee (GitHub: @preston)
