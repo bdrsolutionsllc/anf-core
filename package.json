@@ -17,13 +17,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/preston/anf.git"
+        "url": "git+https://github.com/bdrsolutionsllc/anf-core.git"
     },
     "keywords": [
         "analysis",
         "normal",
         "form",
         "anf",
+        "hl7",
         "postgres",
         "postgresql",
         "relational",
@@ -34,9 +35,9 @@
     "author": "Preston Lee",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/preston/anf/issues"
+        "url": "https://github.com/bdrsolutionsllc/anf/issues"
     },
-    "homepage": "https://github.com/preston/anf#readme",
+    "homepage": "https://github.com/bdrsolutionsllc/anf#readme",
     "dependencies": {
         "commander": "^11.1.0",
         "parquets": "^0.10.10"

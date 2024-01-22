@@ -16,7 +16,7 @@ Department of Veterans Affairs (VA) users: This repository is distributed via NP
 `npm i -g anf-core` to install using your existing NodeJS environment.
 
 `anf schema postgres` to emit a schema for PostgreSQL.
-`anf schema parquet` to emit empty Parquet files.
+`anf schema parquet` (not yet implemented) to emit empty Parquet files.
 
 ## Development
 
