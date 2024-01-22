@@ -26,7 +26,7 @@ npm test-watch # to rerun test cases upon changes
 ```
 
 ## License
-Apache 2.0
+Released under the Apache 2.0 license. See [LICENSE](LICENSE) file.
 
 ## Attribution
 Preston Lee (@preston)
