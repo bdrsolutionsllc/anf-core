@@ -1,8 +1,8 @@
 # Analysis Normal Form (ANF) Command-Line Utility
 
-This NPM package provides resources for capturing clinical healthcare data represented via [Analysis Normal Form release v1](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=523) using mainstream technologies, as the [ANF specification](https://github.com/HL7/ANF) itself is _only_ a logical model and accompanying editorial principles not offer technological guidance.
+These resources are for collaborative research and evaluation of [HL7 Analysis Normal Form release v1](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=523) by possible ANF implementers interested in capturing clinical healthcare data in natively compatible forms. This project is released on [GitHub](https://github.com/bdrsolutionsllc/anf-core) for community collaboration, as well as via [NPM package](https://www.npmjs.com/package/anf-core) for the addition of future command-line utility functions. The [ANF specification](https://github.com/HL7/ANF) itself _only_ provides a logical model. As such, ANF's accompanying editorial principles do not offer implementation guidance or practical technology considerations.
 
-These resources are for collaborative research and evaluation by ANF stakeholders. Since HL7 does not ballot software implementations, this repository is maintained separately from the balloted specification(s). Pre-built copies can be downloaded from via [NPMjs](https://www.npmjs.com/package/anf-core).
+Since HL7 does not ballot software implementations, this repository is maintained separately from the balloted specification(s).
 
 If you ONLY want the static schemas, you may download them directly:
 
